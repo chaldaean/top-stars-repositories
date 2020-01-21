@@ -8,7 +8,10 @@
 
     
     github.token=<git_tocken>
-2) Run 
+
+3) To create database and user run script create_schema.sql
+
+2) Run docker-compose
 
 
     docker-compose up
