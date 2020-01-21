@@ -4,7 +4,7 @@
     https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
     
     
-    github.token=<git_tocken>
+    github.token=<git_token>
 
 3) To create database and user run script create_schema.sql
 
