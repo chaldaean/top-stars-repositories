@@ -14,7 +14,6 @@ import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class GitHubRepositoryFinderTest {
-    private String repoUrl = "https://api.github.com/repos/";
     private int daysBack = 7;
     @Mock
     private GitHubApi gitHubApi;
