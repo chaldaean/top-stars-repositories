@@ -26,8 +26,8 @@ public class GitHubApi {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
-    public GitHubApi(RestTemplateBuilder builder, @Value("${github.user}") String user, @Value("${github.token}") String token) {
-        this.restTemplate = builder.basicAuthentication(user, token).build();
+    public GitHubApi(RestTemplateBuilder builder, @Value("${github.token}") String token) {
+        this.restTemplate = builder.basicAuthentication("", token).build();
     }
 
     /**

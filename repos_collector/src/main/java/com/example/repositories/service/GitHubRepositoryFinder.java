@@ -74,7 +74,7 @@ public class GitHubRepositoryFinder {
             } else {
                 nextId = middleId;
             }
-            logger.debug("New Ids range was found. StartId = {}, NextId = {}", startId, nextId);
+            logger.debug("New starting Ids range was found. StartId = {}, NextId = {}", startId, nextId);
         }
         logger.debug("GitHub repository was found! Id = {}", nextId);
         return nextId;
