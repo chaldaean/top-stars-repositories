@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>repositories</artifactId>
+	<artifactId>toprepo</artifactId>
 	<version>0.0.1</version>
-	<name>repositories</name>
+	<name>toprepo</name>
 	<description>Collect all git repositories</description>
 
 	<properties>

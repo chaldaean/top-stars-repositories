@@ -1,9 +1,23 @@
 version: '3.3'
 
 services:
-  app-server:
+  app-server-collector:
     build:
-      context: .
+      context: repos_collector
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/app?useSSL=false
+      SPRING_DATASOURCE_USERNAME: git
+      SPRING_DATASOURCE_PASSWORD: git
+    networks:
+      - backend
+
+  app-server-top:
+    build:
+      context: top_repos
       dockerfile: Dockerfile
     ports:
       - "8080:8080"

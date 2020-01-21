@@ -1,8 +1,8 @@
-package com.example.repositories.graphql;
+package com.example.toprepo.graphql;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
-import com.example.repositories.model.GitHubRepository;
-import com.example.repositories.repository.AppRepository;
+import com.example.toprepo.model.GitHubRepository;
+import com.example.toprepo.repository.AppRepository;
 import org.springframework.stereotype.Component;
 
 @Component
