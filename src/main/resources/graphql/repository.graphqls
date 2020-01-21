@@ -1,0 +1,11 @@
+type Repository {
+  id: ID!
+  url: String!
+  name: String!
+  stars: Int!
+  createdAt: String!
+}
+
+type Query {
+  findTopRepositories: [Repository]!
+}
